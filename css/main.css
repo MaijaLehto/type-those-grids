@@ -1,9 +1,30 @@
 html {
   box-sizing: border-box;
-  font-family: "Merriweather", serif;
+  font-family: Merriweather, serif;
   line-height: 1.5;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+main {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box1 box1"
+    "box2 box3 box4";
+}
+
+img {
+  width: 100%;
+  grid-area: box1;
+}
+
+.banner {
+  grid-column: 1;
+  grid-row: 1;
 }
