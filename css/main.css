@@ -14,17 +14,16 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-  "box4 box4 box4";
-  }
+  grid-template-areas: "box4 box4 box4";
+}
 
-  div {
-    grid-area: box4;
-    grid-column: 1 / -1;
-    align-self: end;
-    color: white;
-    padding: 1rem;
-  }
+div {
+  grid-area: box4;
+  grid-column: 1 / -1;
+  align-self: end;
+  color: white;
+  padding: 1rem;
+}
 
 main {
   list-style: none;
@@ -32,8 +31,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-    "box1 box2 box3";
+  gap: .75rem;
+  grid-template-areas: "box1 box2 box3";
 }
 
 img {
